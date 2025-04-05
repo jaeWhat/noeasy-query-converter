@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noeasy Work Bot</title>
+
+  <!-- PicoCSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+</head>
+
+<body>
+  <main class="container">
+    <h2>Convert to MyBatis Query</h2>
+
+    <div class="grid">
+      <input id="queryInfo" type="text" name="queryInfo" readonly>
+    </div>
+
+    <div class="grid">
+      <div class="grid">
+        <div>
+          <textarea id="inputQuery" name="inputQuery" rows="15" placeholder="Enter your query"></textarea>
+          <div class="grid" style="gap: 0.5rem;">
+            <button id="btnClear" class="outline">Clear</button>
+            <button id="btnConvert">Convert</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <textarea id="outputQuery" name="outputQuery" rows="15" readonly placeholder="Converted Query"></textarea>
+          <div class="grid">
+            <button id="btnCopy">Copy</button>
+            <button id="btnReset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+        <input id="txtInfo" type="text" name="txtInfo" disabled>
+    </div>
+  </main>
+
+  <!-- 자바스크립트 파일 불러오기 -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
